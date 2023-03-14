@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4903279860605663014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4903279860605663015}
+  - component: {fileID: 4903279860605663012}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4903279860605663015
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4903279860605663014}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.27214673, y: 9.432351, z: 0.6341337}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4903279860605663012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4903279860605663014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3597a6931c0121045897e4f33558478a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  all_spawned_collectables: {fileID: 11400000, guid: edba89fa09f1e9b4d87398c19f83ee00, type: 2}
+  collectable_type_list:
+  - collectable_prefab: {fileID: 4299721992163704063, guid: cf97addf7b99a964aa231055246182c9, type: 3}
+    collectable_count_SO:
+      use_constant: 1
+      constant_value: 5
+      variable: {fileID: 0}
+  - collectable_prefab: {fileID: 4299721992163704063, guid: 75367e97d9388ea4086f6030548390fd, type: 3}
+    collectable_count_SO:
+      use_constant: 1
+      constant_value: 4
+      variable: {fileID: 0}
+  - collectable_prefab: {fileID: 4299721992163704063, guid: 377b2fea3d20f754b84aa89972199f46, type: 3}
+    collectable_count_SO:
+      use_constant: 1
+      constant_value: 3
+      variable: {fileID: 0}
+  - collectable_prefab: {fileID: 4299721992163704063, guid: 51b90316c1147384b8c4b4dddb71741a, type: 3}
+    collectable_count_SO:
+      use_constant: 1
+      constant_value: 2
+      variable: {fileID: 0}
+  collectable_total_count: {fileID: 11400000, guid: 7a3246c2748897a4694cf6a3648741c7, type: 2}
+  obj_x_pos_min: -9
+  obj_x_pos_max: 9
+  obj_z_pos_min: -9
+  obj_z_pos_max: 9

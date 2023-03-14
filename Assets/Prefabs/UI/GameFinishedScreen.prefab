@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5825300595603091010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5825300595603091011}
+  - component: {fileID: 5825300595603091009}
+  - component: {fileID: 5825300595603091008}
+  m_Layer: 5
+  m_Name: GameFinishedScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5825300595603091011
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5825300595603091010}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5825300595603091009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5825300595603091010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce5c029603bf5ac469c855bc311bddbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  affected_object_list:
+  - affected_gameObject: {fileID: 0}
+    state_tag: 
+    activeInStart: 0
+    deactiveInStart: 1
+    is_winState: 1
+    is_loseState: 0
+  - affected_gameObject: {fileID: 0}
+    state_tag: 
+    activeInStart: 0
+    deactiveInStart: 1
+    is_winState: 0
+    is_loseState: 1
+  - affected_gameObject: {fileID: 0}
+    state_tag: 
+    activeInStart: 0
+    deactiveInStart: 1
+    is_winState: 1
+    is_loseState: 1
+--- !u!114 &5825300595603091008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5825300595603091010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3073fb26c47c2fc49a1060f8e667279a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracking_game_events:
+  - tracking_event: {fileID: 11400000, guid: 64ba8502332f9a84fb84013c910d94e8, type: 2}
+    response_nonParam:
+      m_PersistentCalls:
+        m_Calls: []
+    response_intParam:
+      m_PersistentCalls:
+        m_Calls: []
+    response_stringParam:
+      m_PersistentCalls:
+        m_Calls: []
+    response_boolParam:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5825300595603091009}
+          m_TargetAssemblyTypeName: ObjectActivator, Assembly-CSharp
+          m_MethodName: ActivateObject
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

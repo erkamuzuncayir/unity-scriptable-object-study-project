@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9bc7dd71092df4945ba042eab975e3fc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - pickUpCollectable: {fileID: 11400000, guid: 63bd9978fdccf4d4598ed8c564a6d2e8, type: 2}
+  - gameFinished: {fileID: 11400000, guid: cc901c1b815a8d045ae6399ab2557b3b, type: 2}
+  - totalCollectableCount: {fileID: 11400000, guid: 7a3246c2748897a4694cf6a3648741c7, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
